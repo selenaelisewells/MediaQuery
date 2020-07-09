@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #container {
     margin: 0 auto;
     max-width: 1140px;
@@ -56,4 +57,62 @@
     #box4 {
         display: none;
     }
+=======
+#container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: capitalize;
+}
+
+.box {
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 10px;
+    height: 300px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 1140px) {
+    .box {
+        flex: auto;
+    }
+    #container {
+        flex-direction: row;
+    }
+    #box1 {
+        background-color: blue;
+    }
+    #box2 {
+        background-color: purple;
+    }
+    #box3 {
+        background-color: gray;
+    }
+    #box4 {
+        background-color: brown;
+    }
+}
+
+@media screen and (max-width: 641px) {
+    #container {
+        flex-direction: column;
+    }
+    #box1 {
+        background-color: pink;
+    }
+    #box2 {
+        background-color: red;
+    }
+    #box3,
+    #box4 {
+        display: none;
+    }
+>>>>>>> b767e18477361c33aa73bd5f0a768dd073f78efb
 }
